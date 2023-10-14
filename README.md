@@ -5,3 +5,4 @@
 ### 学习参考资料：
 1. [Go设计模式](https://lailin.xyz/post/go-design-pattern.html)<br>
 2. 《Go程序开放实战宝典》
+3. 《大话设计模式》
