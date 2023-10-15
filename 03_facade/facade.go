@@ -10,19 +10,20 @@ type IUser interface {
 
 // IUserFacade 门面模式
 type IUserFacade interface {
-	LoginOrregister(phone int, code int) *User
+	LoginOrRegister(phone int, code int) *User
 }
 
 // User 用户
 type User struct {
 	Name string
 }
+
 type UserService struct {
 }
 
 // Login 登录
 func (u UserService) Login(phone int, code int) *User {
-	if code == 1234 { // 校验操作...
+	if code != 1234 { // 校验操作...
 		return nil
 	}
 	return &User{Name: "用户通过存在校验，login success"}
