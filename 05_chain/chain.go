@@ -19,7 +19,7 @@ func (c *WordFileterChain) AddFilter(filter WordFilter) {
 
 func (c *WordFileterChain) Filter(content string) bool {
 	for _, filter := range c.filters {
-		// 过滤沿链传递，有一个敏感信息直接返回true
+		// 过滤沿链传递，有jv一个敏感信息直接返回true
 		if filter.Filter(content) {
 			return true
 		}
